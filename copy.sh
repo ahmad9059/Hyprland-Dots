@@ -1122,4 +1122,3 @@ printf "${INFO} However, it is ${MAGENTA}HIGHLY SUGGESTED${RESET} to logout and 
 printf "\n%.0s" {1..1}
 printf "${SKY_BLUE}Thank you${RESET} for using ${MAGENTA}KooL's Hyprland Configuration${RESET}... ${YELLOW}ENJOY!!!${RESET}"
 printf "\n%.0s" {1..3}
-
