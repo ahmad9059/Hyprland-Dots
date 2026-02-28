@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # https://github.com/JaKooLit
 
 # Script design to clone the Distro-Hyprland install scripts
@@ -63,6 +63,20 @@ elif [ "$distro_name" = "Ubuntu" ]; then
             Github_URL_branch="25.04"
             Distro_DIR="$HOME/$Distro-$Github_URL_branch"
             echo "${INFO} Ubuntu 25.04 detected. Customizing setup for Ubuntu 25.04."
+            ;;
+        "25.10")
+            Distro="Ubuntu-Hyprland"
+            Github_URL="https://github.com/JaKooLit/$Distro.git"
+            Github_URL_branch="25.10"
+            Distro_DIR="$HOME/$Distro-$Github_URL_branch"
+            echo "${INFO} Ubuntu 25.10 detected. Customizing setup for Ubuntu 25.10."
+            ;;
+        "26.04-development")
+            Distro="Ubuntu-Hyprland"
+            Github_URL="https://github.com/JaKooLit/$Distro.git"
+            Github_URL_branch="26.04-development"
+            Distro_DIR="$HOME/$Distro-$Github_URL_branch"
+            echo "${INFO} Ubuntu 26.04 (development) detected. Customizing setup for Ubuntu 26.04 development branch."
             ;;
         *)
             Distro="Ubuntu-Hyprland"
